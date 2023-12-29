@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.4) url(contactheaderimg.jpg);
+      background-size: cover;
+      background-blend-mode: darken;
+      height: 50vh;
+    }
+    .header-heading {
+      color: #737373;
+    }
+    .header a {
+      margin-top: 2%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #880796;
+    }
+    .header a:hover {
+      color: #880796;
+      border-bottom: 2px solid #737377;
+    }
+    .contact-container {
+      display: flex;
+      height: 69vh;
+    }
+    .form-img-container {
+      width: 50%;
+    }
+    .form-img-container img {
+      height: 100%;
+      width: 100%;
+    }
+    .contact-form-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-form-container input {
+      width: 80%;
+      padding: 1% 1%;
+      border-radius: 5px;
+      margin: 2% 0%;
+      outline: none;
+      border: 1px solid #737373;
+      font-size: 1.00005rem;
+    }
+    #fmessage {
+      font-size: 1.00005rem;
+      width: 80%;
+      padding: 1% 1%;
+      border-radius: 5px;
+      margin: 2% 0%;
+      outline: none;
+      border: 1px solid #737373;
+    }
+    .fsbtn {
+      font-size: 1.5rem;
+      padding: 1% 1%;
+      background-color: #880796;
+      color: whitesmoke;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 1250px) {
+      .contact-container {
+        height: auto;
+      }
+      .form-img-container {
+        display: none;
+      }
+      .contact-form-container {
+        width: 100%;
+        margin-top: 4%;
+      }
+    }
+  </style>
+  <body>
+    <header class="header">
+      <h1 class="header-heading">Contact With Us</h1>
+      <a href="index.html">Home</a>
+    </header>
+    <div class="contact-container">
+      <div class="form-img-container">
+        <img src="contactimg.jpg" alt="contact info img" />
+      </div>
+      <form action="myaction.php" class="contact-form-container">
+        <input type="text" class="fname" placeholder="NAME" />
+        <input
+          type="email"
+          name="fmail"
+          id="fmail"
+          placeholder="Email Address"
+        />
+        <input
+          type="number"
+          name="fnumber"
+          id="fnumber"
+          placeholder="Contact No."
+        />
+        <input
+          type="text"
+          name="fsubject"
+          id="fsubject"
+          placeholder="Subject"
+        />
+        <textarea
+          name="fmessage"
+          id="fmessage"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+        <button class="fsbtn" type="submit">submit</button>
+      </form>
+    </div>
+  </body>
+</html>

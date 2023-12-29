@@ -1,0 +1,102 @@
+@media only screen and (max-width: 1250px) {
+  .header {
+    position: sticky;
+    top: 0%;
+  }
+  .logo {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 37%;
+  }
+  .navlist {
+    flex-direction: column;
+  }
+  .navlist li a {
+    font-size: 1.5rem;
+  }
+  .contact-icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .burger {
+    display: block;
+  }
+  .v-nav-resp {
+    height: 0vh;
+    opacity: 0;
+  }
+  .section1 {
+    flex-direction: column-reverse;
+  }
+  .contant-section {
+    width: 100%;
+    margin: 0 0;
+  }
+  .main-heading {
+    margin: 0 0;
+  }
+  .main-section-p {
+    margin: 3% 0%;
+  }
+  .sec-btn1 {
+    width: 25%;
+    margin: 3% 0%;
+  }
+  .img-section {
+    width: 100%;
+  }
+  .img-section img {
+    width: 100%;
+  }
+  .service-contant {
+    width: 90%;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+  .card-item {
+    width: 100%;
+  }
+  .About-section {
+    flex-direction: column-reverse;
+  }
+  .about-section-contant {
+    width: 95%;
+    align-items: center;
+  }
+  .about-section-heading {
+    text-align: center;
+  }
+  .about-section-para {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .about-btn {
+    width: 35%;
+    border-radius: 0% 0%;
+    padding: 4% 3%;
+    border-radius: 8px;
+  }
+  .about-section-img {
+    width: 100%;
+  }
+  .about-section-img img {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-para1 {
+    font-size: 1.05rem;
+  }
+  .footer-list {
+    display: none;
+  }
+}
